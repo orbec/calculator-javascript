@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script  type="text/javascript" src="script.js" defer></script>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <div class=" row display">0</div>
+            <div class=" row first">
+                <button class="cell action ac" onclick="setClean()">AC</button>
+                <button class="cell action signus" onclick="setNegative()">-/+</button>
+                <button class="cell action backspace" onclick="setBack()">Back</button>
+                <button class="cell operator divide" onclick="setOperation(`/`)">/</button>
+            </div>
+            <div class="row second">
+                <button class="cell number" onclick="setNumber(7)">7</button>
+                <button class="cell number" onclick="setNumber(8)">8</button>
+                <button class="cell number" onclick="setNumber(9)">9</button>
+                <button class="cell operator multiply" onclick="setOperation(`*`)">*</button>
+            </div>
+            <div class="row third">
+                <button class="cell number" onclick="setNumber(4)">4</button>
+                <button class="cell number" onclick="setNumber(5)">5</button>
+                <button class="cell number" onclick="setNumber(6)">6</button>
+                <button class="cell operator minus" onclick="setOperation(`-`)">-</button>
+            </div>
+            <div class="row fourth">
+                <button class="cell number" onclick="setNumber(1)">1</button>
+                <button class="cell number" onclick="setNumber(2)">2</button>
+                <button class="cell number" onclick="setNumber(3)">3</button>
+                <button class="cell operator plus" onclick="setOperation(`+`)">+</button>
+            </div>
+            <div class="row fifth">
+                <button class="cell number zero" onclick="setNumber(0)">0</button>
+                <button class="cell number" onclick="setDecimal()">.</button>
+                <button class="cell operator equal" onclick="operate()">=</button>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
